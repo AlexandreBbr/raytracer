@@ -1,0 +1,6 @@
+*.log
+*.o
+*~
+.vscode/
+raytracer
+a.out
