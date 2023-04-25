@@ -10,12 +10,16 @@
 #ifndef SPHERE_HPP_
 #define SPHERE_HPP_
 
-class Sphere : public AObject {
-    public:
-        Sphere();
-        ~Sphere();
-    protected:
-    private:
+namespace Raytracer {
+    namespace Objects {
+        class Sphere : public AObject {
+            public:
+                Sphere();
+                ~Sphere();
+            protected:
+            private:
+        };
+    }
 };
 
 #endif /* !SPHERE_HPP_ */

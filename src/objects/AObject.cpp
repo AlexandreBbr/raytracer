@@ -7,32 +7,32 @@
 
 #include "../../include/objects/IObject.hpp"
 
-void AObject::setPos(sf::Vector3f pos)
+void Raytracer::AObject::setPos(sf::Vector3f pos)
 {
-    this->position = pos;
+    this->_position = pos;
 }
 
-sf::Vector3f AObject::getPos()
+sf::Vector3f Raytracer::AObject::getPos()
 {
-    return this->position;
+    return this->_position;
 }
 
-void AObject::setRot(sf::Vector3f rot)
+void Raytracer::AObject::setRot(sf::Vector3f rot)
 {
-    this->rotation = rot;
+    this->_rotation = rot;
 }
 
-sf::Vector3f AObject::getRot()
+sf::Vector3f Raytracer::AObject::getRot()
 {
-    return this->rotation;
+    return this->_rotation;
 }
 
-void AObject::setScale(sf::Vector3f scale)
+void Raytracer::AObject::setScale(sf::Vector3f scale)
 {
-    this->scale = scale;
+    this->_scale = scale;
 }
 
-sf::Vector3f AObject::getScale()
+sf::Vector3f Raytracer::AObject::getScale()
 {
-    return this->scale;
+    return this->_scale;
 }

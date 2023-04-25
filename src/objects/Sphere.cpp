@@ -7,10 +7,10 @@
 
 #include "../../include/objects/Sphere.hpp"
 
-Sphere::Sphere()
+Raytracer::Objects::Sphere::Sphere()
 {
 }
 
-Sphere::~Sphere()
+Raytracer::Objects::Sphere::~Sphere()
 {
 }

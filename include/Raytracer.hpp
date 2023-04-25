@@ -8,13 +8,15 @@
 #ifndef RAYTRACER_HPP_
 #define RAYTRACER_HPP_
 
-class Raytracer {
-    public:
-        Raytracer();
-        ~Raytracer();
+namespace Raytracer {
+    class Raytracer {
+        public:
+            Raytracer();
+            ~Raytracer();
 
-    protected:
-    private:
+        protected:
+        private:
+    };
 };
 
 #endif /* !RAYTRACER_HPP_ */

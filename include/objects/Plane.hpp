@@ -10,7 +10,7 @@
 #ifndef PLANE_HPP_
 #define PLANE_HPP_
 
-class Plane : public AObject {
+class Plane : public Raytracer::AObject {
     public:
         Plane();
         ~Plane();
