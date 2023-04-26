@@ -7,10 +7,10 @@
 
 #include "../include/Raytracer.hpp"
 
-Raytracer::Raytracer::Raytracer()
+raytracer::Raytracer::Raytracer()
 {
 }
 
-Raytracer::Raytracer::~Raytracer()
+raytracer::Raytracer::~Raytracer()
 {
 }

@@ -5,15 +5,17 @@
 ** Raytracer
 */
 
+#include "Parser.hpp"
+
 #ifndef RAYTRACER_HPP_
 #define RAYTRACER_HPP_
 
-namespace Raytracer {
+namespace raytracer {
     class Raytracer {
         public:
             Raytracer();
             ~Raytracer();
-
+            raytracer::Parser parser;
         protected:
         private:
     };

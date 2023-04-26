@@ -5,7 +5,10 @@
 ** main
 */
 
+#include "../include/Raytracer.hpp"
+
 int main(int ac, char **av)
 {
+    raytracer::Raytracer core;
     return (0);
 }
