@@ -7,12 +7,14 @@
 
 #ifndef PARSER_HPP_
 #define PARSER_HPP_
+#include <iostream>
 
 namespace raytracer {
     class Parser {
         public:
             Parser();
             ~Parser();
+            bool parseFile(std::string const &filename);
 
         protected:
         private:
