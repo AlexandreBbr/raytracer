@@ -7,12 +7,12 @@
 
 #include "../../include/objects/ILight.hpp"
 
-void Raytracer::ALight::setIntensity(float intensity)
+void raytracer::ALight::setIntensity(float intensity)
 {
     this->_intensity = intensity;
 }
 
-float Raytracer::ALight::getIntensity()
+float raytracer::ALight::getIntensity()
 {
     return this->_intensity;
 }

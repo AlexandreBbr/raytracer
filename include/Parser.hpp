@@ -17,6 +17,6 @@ namespace raytracer {
         protected:
         private:
     };
-}
+};
 
 #endif /* !PARSER_HPP_ */

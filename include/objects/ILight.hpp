@@ -10,8 +10,8 @@
 #ifndef ILIGHT_HPP_
 #define ILIGHT_HPP_
 
-namespace Raytracer {
-    class ILight : public Raytracer::AObject {
+namespace raytracer {
+    class ILight : public raytracer::objects::AObject {
         public:
             virtual ~ILight() = default;
             virtual void setIntensity(float intensity) = 0;
@@ -29,7 +29,7 @@ namespace Raytracer {
         protected:
             float _intensity;
     };
-}
+};
 
 
 #endif /* !ILIGHT_HPP_ */
