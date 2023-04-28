@@ -5,10 +5,13 @@
 ** main
 */
 
-#include "../include/Raytracer.hpp"
+#include "../include/Display.hpp"
 
 int main(int ac, char **av)
 {
     raytracer::Raytracer core;
+    raytracer::Display *ray = new(raytracer::Display);
+    ray->launchScene();
+    delete ray;
     return (0);
 }
