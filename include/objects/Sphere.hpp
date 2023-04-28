@@ -14,7 +14,7 @@ namespace raytracer {
     namespace objects {
         class Sphere : public raytracer::objects::AObject {
             public:
-                Sphere();
+                Sphere(sf::Vector3f pos, sf::Vector3f rot, sf::Vector3f scale);
                 ~Sphere();
             protected:
             private:

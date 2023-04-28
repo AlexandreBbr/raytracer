@@ -15,7 +15,7 @@ namespace raytracer {
 
         class Plane : public raytracer::objects::AObject {
             public:
-                Plane();
+                Plane(sf::Vector3f pos, sf::Vector3f rot, sf::Vector3f scale);
                 ~Plane();
             protected:
             private:

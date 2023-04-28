@@ -18,6 +18,7 @@ namespace raytracer {
             ObjectFactory();
             ~ObjectFactory();
 
+            std::vector<raytracer::objects::IObject *> objects;
             void create(raytracer::objects::ObjectType type, sf::Vector3f pos);
             void create(raytracer::objects::ObjectType type, sf::Vector3f pos, sf::Vector3f rot, sf::Vector3f scale);
         protected:

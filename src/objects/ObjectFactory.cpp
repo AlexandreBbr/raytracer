@@ -6,6 +6,8 @@
 */
 
 #include "../../include/objects/ObjectFactory.hpp"
+#include "../../include/objects/Sphere.hpp"
+#include "../../include/objects/Plane.hpp"
 
 raytracer::ObjectFactory::ObjectFactory()
 {
@@ -24,10 +26,10 @@ void raytracer::ObjectFactory::create(raytracer::objects::ObjectType type, sf::V
 {
     switch (type) {
         case raytracer::objects::SPHERE:
-            std::cout << "Creating SPHERE" << std::endl;
+            this->objects.push_back(new raytracer::objects::Sphere(pos, rot, scale));
             break;
         case raytracer::objects::PLANE:
-            std::cout << "Creating PLANE" << std::endl;
+            this->objects.push_back(new raytracer::objects::Plane(pos, rot, scale));
             break;
     }
 }

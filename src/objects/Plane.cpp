@@ -7,8 +7,11 @@
 
 #include "../../include/objects/Plane.hpp"
 
-raytracer::objects::Plane::Plane()
+raytracer::objects::Plane::Plane(sf::Vector3f pos, sf::Vector3f rot, sf::Vector3f scale)
 {
+    this->setPos(pos);
+    this->setRot(rot);
+    this->setScale(scale);
 }
 
 raytracer::objects::Plane::~Plane()
