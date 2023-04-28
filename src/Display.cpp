@@ -19,6 +19,8 @@ raytracer::Display::~Display()
 {
     _window->close();
     delete _window;
+    delete _sprite;
+    delete _pixels;
 }
 
 void raytracer::Display::poolEvent()
