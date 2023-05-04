@@ -7,6 +7,12 @@
 
 #include "Parser.hpp"
 
+#include <iostream>
+#include <SFML/Graphics.hpp>
+#include <SFML/Window.hpp>
+#include <SFML/Audio.hpp>
+#include <SFML/System.hpp>
+
 #ifndef RAYTRACER_HPP_
 #define RAYTRACER_HPP_
 

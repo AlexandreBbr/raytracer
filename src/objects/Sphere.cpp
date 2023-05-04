@@ -7,10 +7,13 @@
 
 #include "../../include/objects/Sphere.hpp"
 
-Raytracer::Objects::Sphere::Sphere()
+raytracer::objects::Sphere::Sphere(sf::Vector3f pos, sf::Vector3f rot, sf::Vector3f scale)
 {
+    this->setPos(pos);
+    this->setRot(rot);
+    this->setScale(scale);
 }
 
-Raytracer::Objects::Sphere::~Sphere()
+raytracer::objects::Sphere::~Sphere()
 {
 }

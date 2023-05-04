@@ -9,6 +9,8 @@
 #define PARSER_HPP_
 #include <iostream>
 
+#include <iostream>
+
 namespace raytracer {
     class Parser {
         public:
@@ -19,6 +21,6 @@ namespace raytracer {
         protected:
         private:
     };
-}
+};
 
 #endif /* !PARSER_HPP_ */

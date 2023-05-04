@@ -10,12 +10,17 @@
 #ifndef PLANE_HPP_
 #define PLANE_HPP_
 
-class Plane : public Raytracer::AObject {
-    public:
-        Plane();
-        ~Plane();
-    protected:
-    private:
+namespace raytracer {
+    namespace objects {
+
+        class Plane : public raytracer::objects::AObject {
+            public:
+                Plane(sf::Vector3f pos, sf::Vector3f rot, sf::Vector3f scale);
+                ~Plane();
+            protected:
+            private:
+        };
+    };
 };
 
 #endif /* !PLANE_HPP_ */
