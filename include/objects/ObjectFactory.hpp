@@ -8,6 +8,7 @@
 #include <string>
 #include <iostream>
 #include "IObject.hpp"
+#include <vector>
 
 #ifndef OBJECTFACTORY_HPP_
 #define OBJECTFACTORY_HPP_
