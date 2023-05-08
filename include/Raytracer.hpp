@@ -13,6 +13,7 @@
 #include <SFML/Audio.hpp>
 #include <SFML/System.hpp>
 
+
 #ifndef RAYTRACER_HPP_
 #define RAYTRACER_HPP_
 
