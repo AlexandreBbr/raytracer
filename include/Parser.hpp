@@ -16,7 +16,9 @@ namespace raytracer {
             Parser();
             ~Parser();
             void parseFile(const std::string &filename);
-
+            void parseCamera(const libconfig::Setting &camera);
+            void parseLights(const libconfig::Setting &light);
+            void parsePrimitives(const libconfig::Setting &primitives);
         protected:
         private:
     };

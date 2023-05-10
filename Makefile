@@ -8,7 +8,7 @@
 SRC =   $(wildcard ./src/*.cpp) \
 		$(wildcard ./src/**/*.cpp) \
 
-CFLAGS	=	-std=gnu++2a -W -Wall -iquote. -Wextra -Ofast -lsfml-graphics -lsfml-window -lsfml-system
+CFLAGS	=	-std=gnu++2a -W -Wall -iquote. -Wextra -Ofast -lsfml-graphics -lsfml-window -lsfml-system -lconfig++
 
 OBJ =	$(SRC:.cpp=.o)
 
