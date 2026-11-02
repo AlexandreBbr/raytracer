@@ -2,6 +2,6 @@
 *.o
 *~
 .vscode/
-raytracer
+/raytracer
 a.out
-*.cfg
+/output.*

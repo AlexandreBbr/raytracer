@@ -1,28 +1,29 @@
-##
-## EPITECH PROJECT, 2023
-## undefined
-## File description:
-## Makefile
-##
+NAME		=	raytracer
 
-SRC =   $(wildcard ./src/*.cpp) \
-		$(wildcard ./src/**/*.cpp) \
+SRC			=	$(shell find src -name '*.cpp')
+OBJ			=	$(SRC:.cpp=.o)
 
-CFLAGS	=	-std=gnu++2a -W -Wall -iquote. -Wextra -Ofast -lsfml-graphics -lsfml-window -lsfml-system -lconfig++
+CXX			?=	g++
+CXXFLAGS	+=	-std=c++20 -O3 -Wall -Wextra -Iinclude
+LDLIBS		=	-lconfig++ -lz -pthread
 
-OBJ =	$(SRC:.cpp=.o)
+ifeq ($(shell uname),Darwin)
+	BREW		:=	$(shell brew --prefix 2>/dev/null)
+	CXXFLAGS	+=	-I$(BREW)/include
+	LDFLAGS		+=	-L$(BREW)/lib
+endif
 
-NAME	=	raytracer
+all: $(NAME)
 
-all:		$(OBJ) $(NAME)
-	g++ -g -o $(NAME) $(OBJ) $(CFLAGS)
-
-$(NAME):	all
+$(NAME): $(OBJ)
+	$(CXX) -o $(NAME) $(OBJ) $(LDFLAGS) $(LDLIBS)
 
 clean:
 	rm -f $(OBJ)
 
-fclean:	clean
+fclean: clean
 	rm -f $(NAME)
 
-re:	fclean all
+re: fclean all
+
+.PHONY: all clean fclean re

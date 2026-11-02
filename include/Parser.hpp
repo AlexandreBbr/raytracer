@@ -1,27 +1,25 @@
-/*
-** EPITECH PROJECT, 2023
-** B-OOP-400-NCY-4-1-raytracer-tristan.grosgeorge
-** File description:
-** Parser
-*/
-
 #ifndef PARSER_HPP_
 #define PARSER_HPP_
-#include <iostream>
+
+#include "ObjectFactory.hpp"
+#include "Scene.hpp"
+
 #include <libconfig.h++>
+#include <string>
 
 namespace raytracer {
     class Parser {
         public:
-            Parser();
-            ~Parser();
-            void parseFile(const std::string &filename);
-            void parseCamera(const libconfig::Setting &camera);
-            void parseLights(const libconfig::Setting &light);
-            void parsePrimitives(const libconfig::Setting &primitives);
-        protected:
-        private:
-    };
-};
+            Scene parseFile(const std::string &filename) const;
 
-#endif /* !PARSER_HPP_ */
+        private:
+            void parseCamera(const libconfig::Setting &camera, Scene &scene) const;
+            void parseRender(const libconfig::Setting &render, Scene &scene) const;
+            void parsePrimitives(const libconfig::Setting &primitives, Scene &scene) const;
+            void parseLights(const libconfig::Setting &lights, Scene &scene) const;
+
+            ObjectFactory _factory;
+    };
+}
+
+#endif
